@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "text": "You wake up in a dark forest. Do you take the narrow path or head towards the river?",
+    "nextLeft": 2,
+    "nextRight": 3
+  },
+  {
+    "id": 2,
+    "text": "You follow the narrow path and find an old cabin. Do you go inside or continue walking?",
+    "nextLeft": 4,
+    "nextRight": 5
+  },
+  {
+    "id": 3,
+    "text": "You reach the river and see a small boat. Do you cross the river or walk along its bank?",
+    "nextLeft": 6,
+    "nextRight": 7
+  },
+  {
+    "id": 4,
+    "text": "Inside the cabin, you find food and a map! Do you follow the map or rest for the night?",
+    "nextLeft": 8,
+    "nextRight": 9
+  },
+  {
+    "id": 5,
+    "text": "You continue walking and find a wolf blocking your path. Do you fight it or run?",
+    "nextLeft": 10,
+    "nextRight": 11
+  },
+  {
+    "id": 6,
+    "text": "You use the boat to cross the river safely. On the other side, you see a village. Do you enter or explore the woods?",
+    "nextLeft": 12,
+    "nextRight": 13
+  },
+  {
+    "id": 7,
+    "text": "You walk along the riverbank and find a fisherman who offers help. Do you trust him or decline?",
+    "nextLeft": 14,
+    "nextRight": 15
+  },
+  {
+    "id": 8,
+    "text": "Following the map, you find hidden treasure! The End.",
+    "nextLeft": null,
+    "nextRight": null
+  },
+  {
+    "id": 9,
+    "text": "You rest for the night, but the cabin owner returns and chases you out! The End.",
+    "nextLeft": null,
+    "nextRight": null
+  },
+  {
+    "id": 10,
+    "text": "You fight the wolf and win, but you're injured. The End.",
+    "nextLeft": null,
+    "nextRight": null
+  },
+  {
+    "id": 11,
+    "text": "You run away, but get lost in the forest. The End.",
+    "nextLeft": null,
+    "nextRight": null
+  },
+  {
+    "id": 12,
+    "text": "You enter the village, meet kind locals, and find safety. The End.",
+    "nextLeft": null,
+    "nextRight": null
+  },
+  {
+    "id": 13,
+    "text": "You explore the woods and find a magical tree. The End.",
+    "nextLeft": null,
+    "nextRight": null
+  },
+  {
+    "id": 14,
+    "text": "You trust the fisherman, who gives you food and directions. The End.",
+    "nextLeft": null,
+    "nextRight": null
+  },
+  {
+    "id": 15,
+    "text": "You decline his help and starve on your journey. The End.",
+    "nextLeft": null,
+    "nextRight": null
+  }
+]

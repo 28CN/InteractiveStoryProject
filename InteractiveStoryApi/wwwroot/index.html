@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Story</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        #storyText {
+            font-size: 1.2rem;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+            button:hover {
+                background-color: #388E3C;
+            }
+
+        #history {
+            font-size: 0.95rem;
+            padding: 10px;
+            background: #eee;
+            border-radius: 6px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ng's Interactive Story</h1>
+    <div id="storyText">Loading story...</div>
+    <div class="buttons">
+        <button id="leftBtn">Left</button>
+        <button id="rightBtn">Right</button>
+    </div>
+    <div class="buttons" id="endButtons" style="display:none; gap: 10px;">
+        <button onclick="location.reload()">🔁 Restart</button>
+        <button onclick="window.close()">❌ Exit</button>
+    </div>
+    <div id="history"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Ignore build results
+bin/
+obj/
+*.dll
+*.exe
+*.log
+
+# Ignore user-specific files
+.vs/
+*.user
+*.suo
+
+# Ignore publish and temporary files
+*.db
+*.cache
+*.zip
+*.tmp
+
+# Ignore node_modules (if you ever add npm packages)
+wwwroot/node_modules/
+
+# Ignore config/env files
+.env
