@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using LinkListStory;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -9,7 +10,7 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
-const string filePath = "story.json";
+const string filePath = "../LinkListStory/story.json";
 
 List<StoryNode> LoadStory()
 {
@@ -74,6 +75,3 @@ app.MapPost("/story/add", async (HttpContext context) =>
 
 
 app.Run();
-
-record StoryNode(int Id, string Text, int? NextLeft, int? NextRight);
-record NextRequest(int CurrentId, string Choice);
