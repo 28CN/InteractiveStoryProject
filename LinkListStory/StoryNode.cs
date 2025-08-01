@@ -1,3 +1,3 @@
 ﻿namespace LinkListStory;
 
-public record StoryNode(int Id, string Text, int? NextLeft, int? NextRight);
+public record StoryNode(int Id, string Text, int Score, int? NextLeft, int? NextRight);

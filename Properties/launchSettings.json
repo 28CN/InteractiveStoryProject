@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "InteractiveStoryApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:51441",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "appSettings": {
+    "UseStaticFiles": true
+  }
+}

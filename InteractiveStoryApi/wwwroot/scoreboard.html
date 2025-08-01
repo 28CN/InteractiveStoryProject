@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Score Board</title>
+</head>
+<body>
+    <nav style="background-color: #333; padding: 10px;">
+        <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">🏠 Play Game</a>
+        <a href="scoreboard.html" style="color: white; text-decoration: none;">📊 Score Board</a>
+    </nav>
+
+    <h2>Score Board</h2>
+
+    <label for="sortBy">Sort by:</label>
+    <select id="sortBy">
+        <option value="name">Name</option>
+        <option value="score">Score</option>
+    </select>
+
+    <label for="sortAlgo">Algorithm:</label>
+    <select id="sortAlgo">
+        <option value="bubble">Bubble Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="unknown">eye Sort</option>
+        <!-- 以后可以加 quick、insertion 等 -->
+    </select>
+
+    <label>
+        <input type="radio" name="sortOrder" value="asc" checked> Ascending
+    </label>
+    <label>
+        <input type="radio" name="sortOrder" value="desc"> Descending
+    </label>
+
+    <button onclick="loadAndRenderScores()">Sort</button>
+
+    <table id="scoreTable" border="1">
+        <thead><tr><th>Name</th><th>Score</th></tr></thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="scoreboard.js"></script>
+</body>
+</html>

@@ -10,4 +10,8 @@
     <ProjectReference Include="..\LinkListStory\LinkListStory.csproj" />
   </ItemGroup>
 
+	<Target Name="CopyStoryJson" AfterTargets="Build">
+		<Copy SourceFiles="..\LinkListStory\story.json" DestinationFolder="data" SkipUnchangedFiles="true" />
+	</Target>
+
 </Project>

@@ -59,17 +59,30 @@
     </style>
 </head>
 <body>
+    <nav style="background-color: #333; padding: 10px;">
+        <a href="index.html" style="color: white; margin-right: 20px; text-decoration: none;">🏠 Play Game</a>
+        <a href="scoreboard.html" style="color: white; text-decoration: none;">📊 Score Board</a>
+    </nav>
+
     <h1>Ng's Interactive Story</h1>
-    <div id="storyText">Loading story...</div>
-    <div class="buttons">
-        <button id="leftBtn">Left</button>
-        <button id="rightBtn">Right</button>
+    <div id="userInput" style="display: flex; flex-direction: column; align-items: center;">
+        <h2>Enter your name to start the story:</h2>
+        <input type="text" id="userNameInput" placeholder="Your Name" />
+        <button id="startStoryBtn">Start Story</button>
     </div>
-    <div class="buttons" id="endButtons" style="display:none; gap: 10px;">
-        <button onclick="location.reload()">🔁 Restart</button>
-        <button onclick="window.close()">❌ Exit</button>
+
+    <div id="storyContainer" style="display: none;">
+        <div id="storyText">Loading story...</div>
+        <div class="buttons">
+            <button id="leftBtn">Left</button>
+            <button id="rightBtn">Right</button>
+        </div>
+        <div class="buttons" id="endButtons" style="display:none; gap: 10px;">
+            <button id="restartBtn">🔁 Restart</button>
+            <button id="exitBtn">❌ Exit</button>
+        </div>
+        <div id="history"></div>
     </div>
-    <div id="history"></div>
 
     <script src="script.js"></script>
 </body>
